@@ -1,0 +1,13 @@
+# Terraform local execution cache & binaries
+.terraform/
+.terraform.lock.hcl
+
+# State files & emergency dumps
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+errored.tfstate
+
+# Crash logs
+crash.log
+crash.*.log
