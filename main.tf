@@ -94,7 +94,7 @@ data "aws_secretsmanager_secret_version" "app_db_payload" {
 
 # 3. Memory decode
 locals {
-  db_credentials = jsondecode(data.aws_secretsmanager_secret_version.app_db_payload.secret_string)
+  db_credentials = jsondecode(data.aws_secretsmanager_secret_version.app_db_payload.secret_stteing)
 }
 
 # 4. Sensitive output
